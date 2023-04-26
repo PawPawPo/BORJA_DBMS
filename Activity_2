@@ -1,5 +1,0 @@
-SELECT CONCAT(fname, " ", lname) AS Fullname, reports.total_amount, payment.amout, membership.status_mem
-FROM (((Client
-INNER JOIN reports ON client.client_ID = reports.client_ID)
-INNER JOIN payment ON client.client_ID = payment.client_ID)
-INNER JOIN membership ON client.client_ID = membership.client_ID);  
